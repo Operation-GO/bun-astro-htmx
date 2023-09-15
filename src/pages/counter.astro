@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+// this is a comment
+---
+
+<Layout title="counter">
+    <div class="flex gap-3">
+        <button>
+            <span hx-get="/date" hx-trigger="click">
+                Click me!
+            </span>
+        </button>
+        <button>
+            <span hx-get="/date" hx-trigger="click">
+                No, Click Me!
+                {test}
+            </span>
+        </button>
+        <h1>{{ count }}</h1>
+    </div>
+</Layout>
+
+/**
+    how does one enter chat
+    theres a chat button but i cant open it
+    tap on session chat 
+    i did but it not showing anything :(
+*/

@@ -1,0 +1,24 @@
+---
+const test = "Hello"
+---
+
+<h1>Anthony</h1>
+<div class="song-form">
+    <button hx-trigger="click" hx-get="api/test.json" hx-target="#result">Click to GET data</button>
+    <form hx-post="api/test.json" hx-target="#response">
+        <div>
+            <label>Title: <input type="text" name="title"></label>
+            <label>Artist: <input type="text" name="artist"></label>
+            <label>Genre: <input type="text" name="genre"></label>
+        </div>
+    <input type="submit" value="POST">
+    </form>
+    <span id="result"></span>
+</div>
+
+<style>
+    .song-form {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
