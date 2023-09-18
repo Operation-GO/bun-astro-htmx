@@ -1,7 +1,6 @@
 export async function GET({params, request}) {
-  const date = new Date();
-  const test = date.toString();
+  const date = new Date().toTimeString();
   return new Response(
-    test
+    date
   )
 }
