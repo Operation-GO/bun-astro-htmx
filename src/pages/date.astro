@@ -1,4 +1,8 @@
 ---
-const date: Date = new Date();
+import Layout from "../layouts/Layout.astro"
 ---
-<p>{date}</p>
+
+<Layout title="date">
+  <p hx-get="api/date.json" hx-trigger="every 1s"></p>
+  
+</Layout>
