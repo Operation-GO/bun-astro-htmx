@@ -1,5 +1,5 @@
-<form hx-post="/login">
-  <input type="text" name="email" />
-  <input type="text" name="password" />
-  <button type="submit">Submit</button>
+<form class="flex-column" hx-post="api/deadline/login">
+  <label>email<input type="text" name="email"/></label>
+  <label>password<input type="text" name="password"/></label>
+  <input type="submit" value="POST">
 </form>
